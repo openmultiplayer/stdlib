@@ -1,0 +1,6 @@
+{
+	"user": "openmultiplayer",
+	"repo": "pawn-libraries",
+	"entry": "test.pwn",
+	"output": "test.amx"
+}
