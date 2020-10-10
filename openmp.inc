@@ -24,4 +24,7 @@
 	native printf(const format[], {Float,_}:...);
 #endif
 
-#include <openmp-generated>
+#include <openmp/camera>
+#include <openmp/map>
+
+#include <openmp/gen>

@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_camera
+#if defined _inc_gen_camera
 	#endinput
 #endif
-#define _inc_openmp_camera
+#define _inc_gen_camera
 
 native GetPlayerCameraPos(Player:player, &Float:pos_x, &Float:pos_y, &Float:pos_z);
 

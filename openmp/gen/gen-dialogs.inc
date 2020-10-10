@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_dialogs
+#if defined _inc_gen_dialogs
 	#endinput
 #endif
-#define _inc_openmp_dialogs
+#define _inc_gen_dialogs
 
 native bool:ShowPlayerDialog(Dialog:player, dialogid, style, string:caption[], string:info[], string:button1[], string:button2[]);
 

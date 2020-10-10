@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_vehicles
+#if defined _inc_gen_vehicles
 	#endinput
 #endif
-#define _inc_openmp_vehicles
+#define _inc_gen_vehicles
 
 native Vehicle_Create(modelid, Float:pos_x, Float:pos_y, Float:pos_z, Float:a, colour1, colour2, respawn_delay, siren = 0);
 

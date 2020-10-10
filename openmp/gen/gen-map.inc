@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_map
+#if defined _inc_gen_map
 	#endinput
 #endif
-#define _inc_openmp_map
+#define _inc_gen_map
 
 native bool:SetPlayerWorldBounds(Player:player, Float:maxX, Float:minX, Float:maxY, Float:minY);
 

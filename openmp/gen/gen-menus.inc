@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_menus
+#if defined _inc_gen_menus
 	#endinput
 #endif
-#define _inc_openmp_menus
+#define _inc_gen_menus
 
 native CreateMenu(string:title[], columns, Float:X, Float:Y, Float:Col1Width, Float:Col2Width = 0.0);
 

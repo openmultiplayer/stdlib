@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_miscscripting
+#if defined _inc_gen_miscscripting
 	#endinput
 #endif
-#define _inc_openmp_miscscripting
+#define _inc_gen_miscscripting
 
 native CreateExplosion(Float:x, Float:y, Float:z, type, Float:r);
 

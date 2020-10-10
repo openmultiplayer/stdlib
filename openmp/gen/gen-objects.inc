@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_objects
+#if defined _inc_gen_objects
 	#endinput
 #endif
-#define _inc_openmp_objects
+#define _inc_gen_objects
 
 native Object@Create(modelid, Float:position_x, Float:position_y, Float:position_z, Float:rotation_x, Float:rotation_y, Float:rotation_z) = Object__Create;
 
@@ -83,7 +83,7 @@ native Object_SetCameraCollision(Object:object, bool:set);
 
 native Object@SetCameraCollision(bool:set) = Object__SetCameraCollision;
 
-native Object_Move(Object:object, Float:target_x, Float:target_y, Float:target_z, Float:speed, Float:rotation_x = 0, Float:rotation_y = 0, Float:rotation_z = 0);
+native Object_Move(Object:object, Float:target_x, Float:target_y, Float:target_z, Float:speed, Float:rotation_x = 0.0, Float:rotation_y = 0.0, Float:rotation_z = 0.0);
 
 native Object_Stop(Object:object);
 

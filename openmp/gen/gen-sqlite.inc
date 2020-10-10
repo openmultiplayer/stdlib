@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_sqlite
+#if defined _inc_gen_sqlite
 	#endinput
 #endif
-#define _inc_openmp_sqlite
+#define _inc_gen_sqlite
 
 native SQLite_Open(string:filePath[]);
 

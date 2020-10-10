@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_pickups
+#if defined _inc_gen_pickups
 	#endinput
 #endif
-#define _inc_openmp_pickups
+#define _inc_gen_pickups
 
 native Pickup@Create(model, type, Float:pos_x, Float:pos_y, Float:pos_z, vitualWorld = 0) = Pickup__Create;
 

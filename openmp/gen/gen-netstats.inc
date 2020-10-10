@@ -10,10 +10,14 @@
 //
 // =============================================================================
 
-#if defined _inc_openmp_hash
+#if defined _inc_gen_netstats
 	#endinput
 #endif
-#define _inc_openmp_hash
+#define _inc_gen_netstats
 
-native CEILDIV:str((unknown):unset, (unknown):sizeof(cell);
+native UnbanIP(string:ip[]);
+
+native SetGameModeText(string:text[]);
+
+native GetGameModeText(string:text[]);
 
