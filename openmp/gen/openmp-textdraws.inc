@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_textdraws
+#if defined _inc_openmp_textdraws
 	#endinput
 #endif
-#define _inc_gen_textdraws
+#define _inc_openmp_textdraws
 
 native TextDraw@Create(Float:pos_x, Float:pos_y, string:text[]) = TextDraw__Create;
 

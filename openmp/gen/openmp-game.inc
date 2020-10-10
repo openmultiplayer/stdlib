@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_game
+#if defined _inc_openmp_game
 	#endinput
 #endif
-#define _inc_gen_game
+#define _inc_openmp_game
 
 native bool:EnableStuntBonusForAll(bool:enable);
 

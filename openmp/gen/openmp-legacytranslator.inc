@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_legacytranslator
+#if defined _inc_openmp_legacytranslator
 	#endinput
 #endif
-#define _inc_gen_legacytranslator
+#define _inc_openmp_legacytranslator
 
 native CreateLegacyTranslator(string:name[], max, invalid);
 

@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_checkpoints
+#if defined _inc_openmp_checkpoints
 	#endinput
 #endif
-#define _inc_gen_checkpoints
+#define _inc_openmp_checkpoints
 
 native bool:SetPlayerCheckpoint(Checkpoint:player, Float:pos_x, Float:pos_y, Float:pos_z, Float:size);
 

@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_turfs
+#if defined _inc_openmp_turfs
 	#endinput
 #endif
-#define _inc_gen_turfs
+#define _inc_openmp_turfs
 
 native Turf@Create(Float:position_x1, Float:position_y1, Float:position_x2, Float:position_y2) = Turf__Create;
 

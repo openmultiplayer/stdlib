@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_objects
+#if defined _inc_openmp_objects
 	#endinput
 #endif
-#define _inc_gen_objects
+#define _inc_openmp_objects
 
 native Object@Create(modelid, Float:position_x, Float:position_y, Float:position_z, Float:rotation_x, Float:rotation_y, Float:rotation_z) = Object__Create;
 

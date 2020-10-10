@@ -10,14 +10,16 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_netstats
+#if defined _inc_openmp_map
 	#endinput
 #endif
-#define _inc_gen_netstats
+#define _inc_openmp_map
 
-native UnbanIP(string:ip[]);
+native bool:SetPlayerWorldBounds(Player:player, Float:maxX, Float:minX, Float:maxY, Float:minY);
 
-native SetGameModeText(string:text[]);
+native ShowPlayerNameTagForPlayer(Player:player, Player:showplayer, bool:show);
 
-native GetGameModeText(string:text[]);
+native bool:SetPlayerMapIcon(Player:player, id, Float:pos_x, Float:pos_y, Float:pos_z, type, colour, style = MAPICON_LOCAL);
+
+native bool:RemovePlayerMapIcon(Player:player, id);
 

@@ -10,16 +10,12 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_map
+#if defined _inc_openmp_dialogs
 	#endinput
 #endif
-#define _inc_gen_map
+#define _inc_openmp_dialogs
 
-native bool:SetPlayerWorldBounds(Player:player, Float:maxX, Float:minX, Float:maxY, Float:minY);
+native bool:ShowPlayerDialog(Dialog:player, dialogid, style, string:caption[], string:info[], string:button1[], string:button2[]);
 
-native ShowPlayerNameTagForPlayer(Player:player, Player:showplayer, bool:show);
-
-native bool:SetPlayerMapIcon(Player:player, id, Float:pos_x, Float:pos_y, Float:pos_z, type, colour, style = MAPICON_LOCAL);
-
-native bool:RemovePlayerMapIcon(Player:player, id);
+native GetPlayerDialog(Dialog:dialogplayerdata);
 

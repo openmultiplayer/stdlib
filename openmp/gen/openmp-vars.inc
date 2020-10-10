@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_vars
+#if defined _inc_openmp_vars
 	#endinput
 #endif
-#define _inc_gen_vars
+#define _inc_openmp_vars
 
 native GetConsoleVarAsInt(string:varName[]);
 

@@ -10,12 +10,14 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_dialogs
+#if defined _inc_openmp_netstats
 	#endinput
 #endif
-#define _inc_gen_dialogs
+#define _inc_openmp_netstats
 
-native bool:ShowPlayerDialog(Dialog:player, dialogid, style, string:caption[], string:info[], string:button1[], string:button2[]);
+native UnbanIP(string:ip[]);
 
-native GetPlayerDialog(Dialog:dialogplayerdata);
+native SetGameModeText(string:text[]);
+
+native GetGameModeText(string:text[]);
 

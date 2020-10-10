@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_text3d
+#if defined _inc_openmp_text3d
 	#endinput
 #endif
-#define _inc_gen_text3d
+#define _inc_openmp_text3d
 
 native Create3DTextLabel(string:text[], colour, Float:position_x, Float:position_y, Float:position_z, Float:drawDistance, virtualWorld, testlos = 0);
 

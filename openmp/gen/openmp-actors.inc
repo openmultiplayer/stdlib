@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_actors
+#if defined _inc_openmp_actors
 	#endinput
 #endif
-#define _inc_gen_actors
+#define _inc_openmp_actors
 
 native Actor_Create(modelid, Float:x, Float:y, Float:z, Float:rotation);
 native CreateActor(modelid, Float:x, Float:y, Float:z, Float:rotation) = Actor_Create;

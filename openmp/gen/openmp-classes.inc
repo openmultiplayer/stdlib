@@ -10,10 +10,10 @@
 //
 // =============================================================================
 
-#if defined _inc_gen_classes
+#if defined _inc_openmp_classes
 	#endinput
 #endif
-#define _inc_gen_classes
+#define _inc_openmp_classes
 
 native Class_Add(modelid, Float:x, Float:y, Float:z, Float:a, weapon1 = 0, ammo1 = 0, weapon2 = 0, ammo2 = 0, weapon3 = 0, ammo3 = 0, weapon4 = 0, ammo4 = 0, weapon5 = 0, ammo5 = 0, weapon6 = 0, ammo6 = 0, weapon7 = 0, ammo7 = 0, weapon8 = 0, ammo8 = 0, weapon9 = 0, ammo9 = 0, weapon10 = 0, ammo10 = 0, weapon11 = 0, ammo11 = 0, weapon12 = 0, ammo12 = 0, weapon13 = 0, ammo13 = 0);
 
