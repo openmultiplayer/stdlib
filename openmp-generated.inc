@@ -11,8 +11,10 @@
 #include <openmp\openmp-netstats.inc>
 #include <openmp\openmp-objects.inc>
 #include <openmp\openmp-pickups.inc>
+#include <openmp\openmp-sqlite.inc>
 #include <openmp\openmp-text3d.inc>
 #include <openmp\openmp-textdraws.inc>
+#include <openmp\openmp-turfs.inc>
 #include <openmp\openmp-vars.inc>
 #include <openmp\openmp-vehicles.inc>
 
@@ -21,7 +23,7 @@
 forward OnClientCheckResponse(Player:playerid, actionid, address, data);
 forward OnDialogResponse(Player:playerid, dialogid, response, listitem, string:inputtext[]);
 forward OnIncomingConnection(Player:playerid, ip, port);
-forward OnObjectMoved(objectid);
+forward OnObjectMoved(Object:objectid);
 forward OnPlayerClickMap(Player:playerid, Float:x, Float:y, Float:z);
 forward OnPlayerClickTextDraw(Player:playerid, clickedid);
 forward OnPlayerCommandText(Player:playerid, string:cmdtext[]);

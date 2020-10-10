@@ -45,8 +45,8 @@ native SetActorHealth(Actor:actor, Float:health) = Actor_SetHealth;
 native Actor_GetHealth(Actor:actor, &Float:health);
 native GetActorHealth(Actor:actor, &Float:health) = Actor_GetHealth;
 
-native Actor_SetInvulnerable(Actor:actor, bool:invulnerable);
-native SetActorInvulnerable(Actor:actor, bool:invulnerable) = Actor_SetInvulnerable;
+native Actor_SetInvulnerable(Actor:actor, bool:invulnerable = true);
+native SetActorInvulnerable(Actor:actor, bool:invulnerable = true) = Actor_SetInvulnerable;
 
 native bool:Actor_IsInvulnerable(Actor:actor);
 native IsActorInvulnerable(Actor:actor) = Actor_IsInvulnerable;
@@ -62,4 +62,8 @@ native IsActorStreamedIn(Actor:actor, Player:player) = Actor_IsStreamedInForPlay
 
 native bool:Actor_IsValid(actor);
 native IsValidActor(actor) = Actor_IsValid;
+
+native Actor_Display_1(Actor:entity, Player:pid, bool:show);
+
+native Actor_Display_A(Actor:entity, bool:show);
 

@@ -35,7 +35,29 @@ native bool:IsPlayerInRaceCheckpoint(Checkpoint:cpdat);
 
 native bool:PlayerHasRaceCheckpoint(Checkpoint:cpdat);
 
-native Checkpoint_Display(Checkpoint:entity, Player:pid, bool:show);
+native Checkpoint__Create(Float:pos_x, Float:pos_y, Float:pos_z, Float:size);
+
+native bool:Checkpoint__IsValid(id);
+
+native bool:Checkpoint__Destroy(id);
+
+native Checkpoint_Display_1(Checkpoint:entity, Player:pid, bool:show);
+
+native Checkpoint_Display_A(Checkpoint:entity, bool:show);
 
 native bool:Checkpoint_Has(Checkpoint:entity, Player:pid);
+
+native Checkpoint_Inhabit_1(Checkpoint:cp, vw, bool:set);
+
+native Checkpoint_Inhabit_A(Checkpoint:cp, bool:set);
+
+native bool:Checkpoint_In(Checkpoint:cp, vw);
+
+native Checkpoint_SetPosition(Checkpoint:cp, Float:position_x, Float:position_y, Float:position_z);
+
+native Checkpoint_GetPosition(Checkpoint:cp, &Float:position_x, &Float:position_y, &Float:position_z);
+
+native Checkpoint_SetSize(Checkpoint:cp, Float:position);
+
+native Checkpoint_GetSize(Checkpoint:cp, &Float:position);
 

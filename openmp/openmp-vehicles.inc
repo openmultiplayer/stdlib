@@ -15,7 +15,7 @@
 #endif
 #define _inc_openmp_vehicles
 
-native Vehicle_Create(modelid, Float:pos_x, Float:pos_y, Float:pos_z, Float:a, colour1, colour2, respawn_delay, siren);
+native Vehicle_Create(modelid, Float:pos_x, Float:pos_y, Float:pos_z, Float:a, colour1, colour2, respawn_delay, siren = 0);
 
 native bool:Vehicle_Destroy(vehicle);
 
@@ -99,7 +99,9 @@ native bool:Vehicle_AddComponent(Vehicle:vehicle, component);
 
 native bool:Vehicle_RemoveComponent(Vehicle:vehicle, component);
 
-native Vehicle_Display(Vehicle:entity, Player:pid, bool:show);
+native Vehicle_Display_1(Vehicle:entity, Player:pid, bool:show);
+
+native Vehicle_Display_A(Vehicle:entity, bool:show);
 
 native bool:Vehicle_Has(Vehicle:entity, Player:pid);
 

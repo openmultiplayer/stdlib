@@ -15,13 +15,15 @@
 #endif
 #define _inc_openmp_pickups
 
-native Pickup__Create(model, type, Float:pos_x, Float:pos_y, Float:pos_z, vitualWorld);
+native Pickup__Create(model, type, Float:pos_x, Float:pos_y, Float:pos_z, vitualWorld = 0);
 
 native bool:Pickup__Destroy(pickup);
 
 native bool:Pickup__IsValid(Pickup:pickup);
 
-native Pickup_Display(Pickup:entity, Player:pid, bool:show);
+native Pickup_Display_1(Pickup:entity, Player:pid, bool:show);
+
+native Pickup_Display_A(Pickup:entity, bool:show);
 
 native bool:Pickup_Has(Pickup:entity, Player:pid);
 

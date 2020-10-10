@@ -21,7 +21,7 @@ native bool:Object__Destroy(Object:id);
 
 native Object_AttachToVehicle(Object:object, Vehicle:vehicle, Float:offset_x, Float:offset_y, Float:offset_z, Float:rotation_x, Float:rotation_y, Float:rotation_z);
 
-native Object_AttachToObject(Object:object, Object:targetObject, Float:offset_x, Float:offset_y, Float:offset_z, Float:rotation_x, Float:rotation_y, Float:rotation_z, bool:syncrotation);
+native Object_AttachToObject(Object:object, Object:targetObject, Float:offset_x, Float:offset_y, Float:offset_z, Float:rotation_x, Float:rotation_y, Float:rotation_z, bool:syncrotation = true);
 
 native Object_AttachToPlayer(Object:object, Player:player, Float:offset_x, Float:offset_y, Float:offset_z, Float:rotation_x, Float:rotation_y, Float:rotation_z);
 
@@ -57,6 +57,10 @@ native Object_GetModel(Object:object);
 
 native Object_SetModel(Object:object, modelid);
 
+native Float:Object_GetStreamDistance(Object:object);
+
+native Object_SetStreamDistance(Object:object, Float:distance);
+
 native Float:Object_GetDrawDistance(Object:object);
 
 native Object_SetDrawDistance(Object:object, Float:distance);
@@ -79,7 +83,7 @@ native Object_SetCameraCollision(Object:object, bool:set);
 
 native Object__SetCameraCollision(bool:set);
 
-native Object_Move(Object:object, Float:target_x, Float:target_y, Float:target_z, Float:speed, Float:rotation_x, Float:rotation_y, Float:rotation_z);
+native Object_Move(Object:object, Float:target_x, Float:target_y, Float:target_z, Float:speed, Float:rotation_x = 0, Float:rotation_y = 0, Float:rotation_z = 0);
 
 native Object_Stop(Object:object);
 
@@ -95,9 +99,9 @@ native Object_GetMoveEndPosition(Object:object, &Float:position_x, &Float:positi
 
 native bool:Object__IsValid(Object:object);
 
-native Object_Display(Object:entity, Player:pid, bool:show);
+native Object_Display_1(Object:entity, Player:pid, bool:show);
+
+native Object_Display_A(Object:entity, bool:show);
 
 native bool:Object_Has(Object:entity, Player:pid);
-
-native SetStreamDistance(Float:distance);
 

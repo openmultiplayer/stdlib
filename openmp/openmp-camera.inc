@@ -19,13 +19,13 @@ native GetPlayerCameraPos(Player:player, &Float:pos_x, &Float:pos_y, &Float:pos_
 
 native SetPlayerCameraPos(Player:player, Float:x, Float:y, Float:z);
 
-native SetPlayerCameraLookAt(Player:player, Float:x, Float:y, Float:z, cut);
+native SetPlayerCameraLookAt(Player:player, Float:x, Float:y, Float:z, cut = CAMERA_CUT);
 
 native SetCameraBehindPlayer(Player:player);
 
-native InterpolateCameraPos(Player:player, Float:fromx, Float:fromy, Float:fromz, Float:tox, Float:toy, Float:toz, time, cut);
+native InterpolateCameraPos(Player:player, Float:fromx, Float:fromy, Float:fromz, Float:tox, Float:toy, Float:toz, time, cut = CAMERA_CUT);
 
-native InterpolateCameraLookAt(Player:player, Float:fromx, Float:fromy, Float:fromz, Float:tox, Float:toy, Float:toz, time, cut);
+native InterpolateCameraLookAt(Player:player, Float:fromx, Float:fromy, Float:fromz, Float:tox, Float:toy, Float:toz, time, cut = CAMERA_CUT);
 
 native GetPlayerCameraFrontVector(Player:player, &Float:pos_x, &Float:pos_y, &Float:pos_z);
 
@@ -47,9 +47,9 @@ native GetPlayerCameraTargetActor(Player:playerdata);
 
 native TogglePlayerSpectating(Player:player, bool:toggle);
 
-native bool:PlayerSpectatePlayer(Player:player, Player:target, mode);
+native bool:PlayerSpectatePlayer(Player:player, Player:target, mode = SPECTATE_MODE_NORMAL);
 
-native bool:PlayerSpectateVehicle(Player:player, Vehicle:vehicle, mode);
+native bool:PlayerSpectateVehicle(Player:player, Vehicle:vehicle, mode = SPECTATE_MODE_NORMAL);
 
 native bool:AttachCameraToObject(Player:player, object);
 

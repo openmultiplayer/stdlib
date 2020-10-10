@@ -33,7 +33,9 @@ native TextDraw_GetZIndex(TextDraw:td, &Float:z);
 
 native TextDraw_SetZIndex(TextDraw:td, Float:z);
 
-native TextDraw_Display(TextDraw:entity, Player:pid, bool:show);
+native TextDraw_Display_1(TextDraw:entity, Player:pid, bool:show);
+
+native TextDraw_Display_A(TextDraw:entity, bool:show);
 
 native bool:TextDraw_Has(TextDraw:entity, Player:pid);
 
@@ -65,7 +67,7 @@ native SetString(string:text[]);
 
 native SetPreviewModel(model);
 
-native SetPreviewRotationAndZoom(Float:rotation_x, Float:rotation_y, Float:rotation_z, Float:zoom);
+native SetPreviewRotationAndZoom(Float:rotation_x, Float:rotation_y, Float:rotation_z, Float:zoom = 1.0);
 
 native SetPreviewVehicleColor(color1, color2);
 

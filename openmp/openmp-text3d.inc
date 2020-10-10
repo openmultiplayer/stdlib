@@ -15,7 +15,7 @@
 #endif
 #define _inc_openmp_text3d
 
-native Create3DTextLabel(string:text[], colour, Float:position_x, Float:position_y, Float:position_z, Float:drawDistance, virtualWorld, testlos);
+native Create3DTextLabel(string:text[], colour, Float:position_x, Float:position_y, Float:position_z, Float:drawDistance, virtualWorld, testlos = 0);
 
 native bool:Delete3DTextLabel(id);
 
@@ -25,9 +25,7 @@ native bool:Attach3DTextLabelToVehicle(Text3D:text3d, Vehicle:vehicle, Float:off
 
 native bool:Update3DTextLabelText(Text3D:text3d, color, string:text[]);
 
-native CreatePlayer3DTextLabel(PlayerText3D:pt3ddata, string:text[], colour, Float:position_x, Float:position_y, Float:position_z, Float:drawDistance, Player:attachedPlayerID, attachedVehicleID, testlos);
+native Text3D_Display_1(Text3D:entity, Player:pid, bool:show);
 
-native bool:DeletePlayer3DTextLabel(PlayerText3D:pt3ddata, id);
-
-native bool:UpdatePlayer3DTextLabelText(PlayerText3D:playertext3d, colour, string:text[]);
+native Text3D_Display_A(Text3D:entity, bool:show);
 

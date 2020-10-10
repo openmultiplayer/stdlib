@@ -15,7 +15,7 @@
 #endif
 #define _inc_openmp_menus
 
-native CreateMenu(string:title[], columns, Float:X, Float:Y, Float:Col1Width, Float:Col2Width);
+native CreateMenu(string:title[], columns, Float:X, Float:Y, Float:Col1Width, Float:Col2Width = 0.0);
 
 native DestroyMenu(Menu:menu);
 
