@@ -15,9 +15,9 @@
 #endif
 #define _inc_openmp_objects
 
-native Object__Create(modelid, Float:position_x, Float:position_y, Float:position_z, Float:rotation_x, Float:rotation_y, Float:rotation_z);
+native Object@Create(modelid, Float:position_x, Float:position_y, Float:position_z, Float:rotation_x, Float:rotation_y, Float:rotation_z) = Object__Create;
 
-native bool:Object__Destroy(Object:id);
+native bool:Object@Destroy(Object:id) = Object__Destroy;
 
 native Object_AttachToVehicle(Object:object, Vehicle:vehicle, Float:offset_x, Float:offset_y, Float:offset_z, Float:rotation_x, Float:rotation_y, Float:rotation_z);
 
@@ -81,7 +81,7 @@ native bool:Object_RemoveMaterial(Object:object, materialIndex);
 
 native Object_SetCameraCollision(Object:object, bool:set);
 
-native Object__SetCameraCollision(bool:set);
+native Object@SetCameraCollision(bool:set) = Object__SetCameraCollision;
 
 native Object_Move(Object:object, Float:target_x, Float:target_y, Float:target_z, Float:speed, Float:rotation_x = 0, Float:rotation_y = 0, Float:rotation_z = 0);
 
@@ -97,7 +97,7 @@ native Object_GetMoveEndRotation(Object:object, &Float:rotation_x, &Float:rotati
 
 native Object_GetMoveEndPosition(Object:object, &Float:position_x, &Float:position_y, &Float:position_z);
 
-native bool:Object__IsValid(Object:object);
+native bool:Object@IsValid(Object:object) = Object__IsValid;
 
 native Object_Display_1(Object:entity, Player:pid, bool:show);
 

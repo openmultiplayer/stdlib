@@ -15,11 +15,11 @@
 #endif
 #define _inc_openmp_turfs
 
-native Turf__Create(Float:position_x1, Float:position_y1, Float:position_x2, Float:position_y2);
+native Turf@Create(Float:position_x1, Float:position_y1, Float:position_x2, Float:position_y2) = Turf__Create;
 
-native bool:Turf__Destroy(turf);
+native bool:Turf@Destroy(turf) = Turf__Destroy;
 
-native bool:Turf__IsValid(Turf:unset);
+native bool:Turf@IsValid(Turf:unset) = Turf__IsValid;
 
 native Turf_SetColour(Turf:turf, colour);
 

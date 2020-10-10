@@ -15,11 +15,11 @@
 #endif
 #define _inc_openmp_textdraws
 
-native TextDraw__Create(Float:pos_x, Float:pos_y, string:text[]);
+native TextDraw@Create(Float:pos_x, Float:pos_y, string:text[]) = TextDraw__Create;
 
-native bool:TextDraw__Destroy(textdraw);
+native bool:TextDraw@Destroy(textdraw) = TextDraw__Destroy;
 
-native TextDraw__IsValid(textdraw);
+native TextDraw@IsValid(textdraw) = TextDraw__IsValid;
 
 native bool:SelectTextDraw(Player:player, color);
 

@@ -35,11 +35,11 @@ native bool:IsPlayerInRaceCheckpoint(Checkpoint:cpdat);
 
 native bool:PlayerHasRaceCheckpoint(Checkpoint:cpdat);
 
-native Checkpoint__Create(Float:pos_x, Float:pos_y, Float:pos_z, Float:size);
+native Checkpoint@Create(Float:pos_x, Float:pos_y, Float:pos_z, Float:size) = Checkpoint__Create;
 
-native bool:Checkpoint__IsValid(id);
+native bool:Checkpoint@IsValid(id) = Checkpoint__IsValid;
 
-native bool:Checkpoint__Destroy(id);
+native bool:Checkpoint@Destroy(id) = Checkpoint__Destroy;
 
 native Checkpoint_Display_1(Checkpoint:entity, Player:pid, bool:show);
 

@@ -15,11 +15,11 @@
 #endif
 #define _inc_openmp_pickups
 
-native Pickup__Create(model, type, Float:pos_x, Float:pos_y, Float:pos_z, vitualWorld = 0);
+native Pickup@Create(model, type, Float:pos_x, Float:pos_y, Float:pos_z, vitualWorld = 0) = Pickup__Create;
 
-native bool:Pickup__Destroy(pickup);
+native bool:Pickup@Destroy(pickup) = Pickup__Destroy;
 
-native bool:Pickup__IsValid(Pickup:pickup);
+native bool:Pickup@IsValid(Pickup:pickup) = Pickup__IsValid;
 
 native Pickup_Display_1(Pickup:entity, Player:pid, bool:show);
 
