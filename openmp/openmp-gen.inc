@@ -11,6 +11,7 @@
 #include <openmp\gen\openmp-netstats.inc>
 #include <openmp\gen\openmp-objects.inc>
 #include <openmp\gen\openmp-pickups.inc>
+#include <openmp\gen\openmp-player.inc>
 #include <openmp\gen\openmp-sqlite.inc>
 #include <openmp\gen\openmp-text3d.inc>
 #include <openmp\gen\openmp-textdraws.inc>
