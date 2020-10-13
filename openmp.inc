@@ -20,7 +20,7 @@
 
 #if !defined _console_included
 	#define _console_included
-	native print(const string[]);
+	native print(const string[], foreground=-1, background=-1, highlight=-1);
 	native printf(const format[], {Float,_}:...);
 #endif
 
