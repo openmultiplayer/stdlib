@@ -17,7 +17,7 @@ sampctl package install openmultiplayer/stdlib
 Include in your code and begin using the library:
 
 ```pawn
-#include <stdlib>
+#include <openmp>
 ```
 
 ## Usage

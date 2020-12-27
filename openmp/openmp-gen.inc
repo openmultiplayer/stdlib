@@ -23,6 +23,7 @@
 
 forward OnClientCheckResponse(Player:playerid, actionid, address, data);
 forward OnDialogResponse(Player:playerid, dialogid, response, listitem, string:inputtext[]);
+forward OnEnterExitModShop(Player:playerid, bool:entered, interior);
 forward OnIncomingConnection(Player:playerid, ip, port);
 forward OnObjectMoved(Object:objectid);
 forward OnPlayerClickMap(Player:playerid, Float:x, Float:y, Float:z);
@@ -35,8 +36,8 @@ forward OnPlayerEditAttachedObject(Player:playerid, response, index, modelid, bo
 forward OnPlayerEditObject(Player:playerid, playerobject, objectid, response, Float:fx, Float:fy, Float:fz, Float:rx, Float:ry, Float:rz);
 forward OnPlayerEnterCheckpoint(Player:playerid);
 forward OnPlayerEnterRaceCheckpoint(Player:playerid);
-forward OnPlayerEnterVehicle(Player:playerid, vehicleid, bool:ispassenger);
-forward OnPlayerExitVehicle(Player:playerid, vehicleid);
+forward OnPlayerEnterVehicle(Player:playerid, Vehicle:vehicleid, bool:ispassenger);
+forward OnPlayerExitVehicle(Player:playerid, Vehicle:vehicleid);
 forward OnPlayerExitedMenu(Player:playerid);
 forward OnPlayerGiveDamage(Player:playerid, damagedid, Float:damage, weaponid, bodypart);
 forward OnPlayerGiveDamageActor(Player:playerid, Actor:actorid, Float:damage, weaponid, bodypart);
@@ -60,3 +61,12 @@ forward OnScriptExit(script, type);
 forward OnScriptInit(script, type);
 forward OnServerCommand(string:ip[], string:command[]);
 forward OnTick(tick);
+forward OnTrailerUpdate(Player:playerid, vehicleid);
+forward OnUnoccupiedVehicleUpdate(vehicleid, Player:playerid, passenger_seat, Float:newx, Float:newy, Float:newz, Float:vel_x, Float:vel_y, Float:vel_z);
+forward OnVehicleDamageStatusUpdate(Vehicle:vehicleid, Player:playerid);
+forward OnVehicleDeath(Vehicle:vehicleid, Player:killerid);
+forward OnVehicleMod(Player:playerid, Vehicle:vehicleid, component);
+forward OnVehiclePaintjob(Player:playerid, Vehicle:vehicleid, paintjobid);
+forward OnVehicleRespray(Player:playerid, Vehicle:vehicleid, colour1, colour2);
+forward OnVehicleSirenStateChange(Player:playerid, Vehicle:vehicleid, bool:newstate);
+forward OnVehicleSpawn(Vehicle:vehicleid);
