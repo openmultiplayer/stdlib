@@ -29,7 +29,7 @@ native bool:Vehicle_SetPosition(Vehicle:vehicle, Float:pos_x, Float:pos_y, Float
 
 native bool:Vehicle_GetRotation(Vehicle:vehicle, &Float:rot_x, &Float:rot_y, &Float:rot_z);
 
-native bool:Vehicle_GetRotationQuat(Vehicle:vehicle, &Float:quat_x, &Float:quat_y, &Float:quat_z, &Float:quat_w);
+native bool:Vehicle_GetRotationQuat(Vehicle:vehicle, &Float:quat_w, &Float:quat_x, &Float:quat_y, &Float:quat_z);
 
 native bool:Vehicle_GetZAngle(Vehicle:vehicle, &Float:a);
 
@@ -104,6 +104,12 @@ native Vehicle_Display_1(Vehicle:entity, Player:pid, bool:show);
 native Vehicle_Display_A(Vehicle:entity, bool:show);
 
 native bool:Vehicle_Has(Vehicle:entity, Player:pid);
+
+native bool:Vehicle_Respawn(Vehicle:vehicle);
+
+native bool:Vehicle_HasPlayer(Player:player, Vehicle:vehicle);
+
+native bool:Vehicle_SetAngularVelocity(Vehicle:vehicle, Float:velocity_x, Float:velocity_y, Float:velocity_z);
 
 native SetNumberPlate(string:numberPlate[]);
 

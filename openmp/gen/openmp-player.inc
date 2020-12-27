@@ -177,11 +177,13 @@ native bool:PlaySoundForAll(sound, Float:x, Float:y, Float:z);
 
 native bool:ApplyAnimation(Player:player, string:animlib[], string:animname[], Float:delta, bool:loop, bool:lockx, bool:locky, bool:freeze, time, forcesync = 0);
 
-native bool:ClearAnimations(Player:player, bool:forcesync = 0);
+native bool:ClearAnimations(Player:player, bool:forcesync = false);
 
 native bool:DisableRemoteVehicleCollisions(Player:player, bool:disable);
 
 native bool:GetPlayerVehicleCollision(Player:player);
 
 native bool:IsPlayerConnected(Player:playerid);
+
+native bool:Player_IsInAnyVehicle(Player:player);
 
